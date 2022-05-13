@@ -1,6 +1,6 @@
 import React from 'react'
-import { SafeAreaView, StyleSheet } from 'react-native'
-
+import { SafeAreaView, StyleSheet, Text} from 'react-native'
+//import { StatusBar } from 'expo-status-bar';
 
 import Contador from './components/Contador'
 //import Botao from './components/Botao'
@@ -10,21 +10,25 @@ import Contador from './components/Contador'
 //import CompPadrao, { Comp1, Comp2 } from './components/Mult'
 //import Primeiro from './components/Primeiro'
 
-export default() => (
+export default function App() {
+    return (
     <SafeAreaView style={style.App}>
         <Contador inicial={100} />
+        <Text>asdfkhgasdf</Text>
         {/*
-        <Botao />
         <Titulo principal="Cadastro Produto"
-                secundario="Tela de Cadastro do Produto"/>
+        secundario="Tela de Cadastro do Produto"/>
         <Aleatorio min={1} max={60}/>
         <MinMax min={3} max={20}/>
         <CompPadrao />
+        <Botao />
         <Comp1 />
         <Comp2 />
         <Primeiro />*/}
+        {/*<StatusBar style="auto" />*/}
     </SafeAreaView>
-)
+    )
+}
 
 const style = StyleSheet.create({
     App: {

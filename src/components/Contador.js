@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Text, Button } from 'react-native'
 import Estilo from './estilo'
-import { useState } from 'react/cjs/react.production.min'
 
 export default ({inicial = 0, passo = 1}) => {
     const [numero, setNumero] = useState(inicial)
@@ -17,4 +16,4 @@ export default ({inicial = 0, passo = 1}) => {
             <Button title="-" onPress={dec}/>
         </>
     )
-}
+}   
